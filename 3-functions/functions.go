@@ -12,3 +12,6 @@ func difference(a int, b int) float64 {
 func main() {
 	fmt.Println(difference(7, 40))
 }
+
+//cd 3-functions
+//go run functions.go

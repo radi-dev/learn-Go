@@ -11,3 +11,6 @@ func main() {
 	f.Print("Random integer between 0 and 50: ")
 	f.Println((rand.Intn(50)))
 }
+
+//cd 2-packages
+//go run packages.go
