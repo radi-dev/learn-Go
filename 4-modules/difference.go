@@ -4,6 +4,6 @@ import (
 	"math"
 )
 
-func difference(a int, b int) float64 {
+func difference(a, b int) float64 {
 	return math.Abs(float64(a - b))
 }
