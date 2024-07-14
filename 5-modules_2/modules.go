@@ -1,15 +1,13 @@
 package main
 
 import (
-	"fmt"
-
-	"./calc/difference"
+	"radi.com/calc"
 )
 
-func main() {
-	fmt.Println(difference.Difference(7, 40))
-}
 
+func main() {
+calc.DoCalc()
+}
 //cd 5-modules_2
 //go mod init modules
 //go run .
