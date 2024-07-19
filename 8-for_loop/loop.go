@@ -42,3 +42,6 @@ func main() {
 	infiniteWhile()
 
 }
+
+//cd 8-for_loop
+//go run loop.go
