@@ -14,6 +14,11 @@ func forLoop(count int) (sum int) {
 	return
 }
 
+func forRange(rn int){
+	for i := range rn{
+		fmt.Printf("\nLoop of range %v.\nCurrent count is %v\n",rn,i+1)
+	}
+}
 // Go has only a for loop. But a while loop behaviour can be achieved.
 func whileLoop(count int)(sum int) {
 	for sum <= count {
@@ -38,6 +43,7 @@ func infiniteWhile(){
 func main() {
 
 	forLoop(15)
+	forRange(9)
 	whileLoop(12)
 	infiniteWhile()
 
