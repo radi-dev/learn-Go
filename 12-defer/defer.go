@@ -10,4 +10,4 @@ func main() {
 }
 
 //cd 12-defer
-//go run defer_.go
+//go run defer.go
