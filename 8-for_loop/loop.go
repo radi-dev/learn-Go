@@ -51,3 +51,4 @@ func main() {
 
 //cd 8-for_loop
 //go run loop.go
+//ctrl-c to stop running
