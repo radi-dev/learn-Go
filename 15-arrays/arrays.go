@@ -13,11 +13,11 @@ func main() {
 	fmt.Println(blood_code)
 }
 
-//cd 15-arrays
-//go run arrays.go
-
 /*
 - Cannot be resized
 - An array's length is part of its type
 - The type [n]T is an array of n values of type T
 */
+
+//cd 15-arrays
+//go run arrays.go
