@@ -11,6 +11,21 @@ func main() {
 
 	blood_code := [5]int{2, 12, 15, 15, 4}
 	fmt.Println(blood_code)
+
+	x := [2]string{"Penn", "Teller"}
+	y := []string{"Penn", "Teller"}
+	z := [...]string{"Penn", "Teller"}
+	fmt.Println("\nx >>", x, "\ny >>", y, "\nz >>", z)
+
+	//arrays are not mutable in Go.
+	//To achieve mutation, use pointers
+	l := [3]int{}
+	n := l
+	l[1] = 5
+	n[1] = 7
+	fmt.Println("\nl >>", l, "\nn >>", n)
+
+
 }
 
 /*
