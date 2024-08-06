@@ -21,8 +21,12 @@ func main() {
 
 	//slices can reference slices
 	ovi := slice_literal_1[1:3]
-	ovi = append(ovi, "99", "998", "a new ove", "ove tenebrae") //APPEND:creates new underlying array to accomodate capacity of new appendages
+	ovi = append(ovi, "99", "998",) //APPEND:creates new underlying array to accomodate capacity of new appendages
 	fmt.Println("ovi", ovi)
+
+	ovi_x:=[]string{ "a new ove", "ove tenebrae"}
+	ovi = append(ovi, ovi_x...)
+	fmt.Println("ovi + ovi_x", ovi)
 
 	//Default for lower bound is 0. For higher bound is length of slice
 	ovi_low_default := ovi[:3]
@@ -42,8 +46,11 @@ func main() {
 			s, len(x), cap(x), x)
 	}
 
+	var s []int // default value of s is nil. i.e space is not created
+	prettyPrint("s", s)
 	//the built-in make function can be used to create dynamically sized arrays
-	a := make([]int, 5)//5 is both len and cap
+	//make assigns zero value to each index
+	a := make([]int, 5) //5 is both len and cap
 	prettyPrint("a", a)
 
 	b := make([]int, 0, 12) //0 is len, 12 is cap
@@ -54,9 +61,6 @@ func main() {
 
 	// d := a[:70]//error. exceeds cap of a/
 	// prettyPrint("d", d)
-
-
-
 
 }
 

@@ -13,12 +13,12 @@ func main() {
 	fmt.Println(blood_code)
 
 	x := [2]string{"Penn", "Teller"}
-	y := []string{"Penn", "Teller"}
-	z := [...]string{"Penn", "Teller"}
+	y := [...]string{"Penn", "Teller"}
+	z := []string{"Penn", "Teller"}  //slice
 	fmt.Println("\nx >>", x, "\ny >>", y, "\nz >>", z)
 
 	//arrays are not mutable in Go.
-	//To achieve mutation, use pointers
+	//To achieve mutation, use slices or pointers
 	l := [3]int{}
 	n := l
 	l[1] = 5
