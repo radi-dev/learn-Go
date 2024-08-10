@@ -22,3 +22,4 @@ func main() {
 //cd 20-ex-3-maps
 //go mod init wordCount
 //go mod tidy
+//go run .
