@@ -10,7 +10,7 @@ func forRangeOfSlice(slc []int) {
 
 	fmt.Printf("\n\nLoop of slice %v. omit value\n", slc)
 	for i := range slc {
-		fmt.Printf("\nIndex is %v\n", i,)
+		fmt.Printf("\nIndex is %v\n", i)
 	}
 
 	fmt.Printf("\n\nLoop of slice %v. skip index\n", slc)
@@ -19,7 +19,7 @@ func forRangeOfSlice(slc []int) {
 	}
 
 	fmt.Printf("\n\nLoop of slice %v. Skip value\n", slc)
-	for i, _ := range slc {
+	for i := range slc {
 		fmt.Printf("\nIndex is %v\n", i)
 	}
 }

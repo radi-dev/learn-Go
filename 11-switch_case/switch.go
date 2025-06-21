@@ -23,7 +23,7 @@ func saturdaySwitch() {
 	}
 }
 func weekdaySwitch() {
-	fmt.Println("Weekday or weekend?")
+	fmt.Println("Is today a weekday or a weekend?")
 	today := time.Now().Weekday()
 	switch {
 	case today == time.Saturday:

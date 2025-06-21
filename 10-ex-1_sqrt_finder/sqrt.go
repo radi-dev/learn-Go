@@ -32,5 +32,5 @@ func main() {
 	Sqrt(144)
 }
 
-//cd 10-Ex_sqrt_finder
+//cd 10-ex-1_sqrt_finder
 //go run sqrt.go

@@ -7,6 +7,20 @@ type vehicle struct {
 }
 
 func main() {
+	var map0 map[string]string = make(map[string]string)
+	map0["Ra"] = "Sun god"
+	map0["Anubis"] = "God of the dead"
+	map0["Horus"] = "God of the sky"
+	map0["Osiris"], map0["Isis"] = "God of the underworld", "Goddess of motherhood and fertility"
+	fmt.Println("map0 is: ", map0)
+
+	var map00 map[string]string = map[string]string{
+		"Zeus":     "God of the sky",
+		"Poseidon": "God of the sea",
+		"Hades":    "God of the underworld",
+		"Ares":     "God of war"}
+	fmt.Println("map00 is: ", map00)
+
 	var map1 map[string]vehicle
 	map1 = make(map[string]vehicle)
 	map1["car"] = vehicle{canMove: true}

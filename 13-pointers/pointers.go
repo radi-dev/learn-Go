@@ -10,7 +10,9 @@ func pointX() {
 	*x_pointr = 12 // set x through the pointer
 	fmt.Println("\nx >>", x, "\n*x_pointr >>", *x_pointr)
 
-	x = 24 // set x through the pointer
+	x = 24 // set x through the reference
+	// x_pointr still points to the same memory location
+	// so it will reflect the change
 	fmt.Println("\nx >>", x, "\n*x_pointr >>", *x_pointr)
 
 	*x_pointr = *x_pointr / 2
