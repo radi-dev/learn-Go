@@ -16,6 +16,7 @@
 - To run all tests in the project, use the `go test ./...` command in the project directory
 - To run a specific test function, use the `-run` flag with a regular expression that matches the test function name
 - To run tests with verbose output, use the `-v` flag
+- To run tests with coverage analysis, use the `-cover` flag
 
 
 - Example functions should be defined in the test file and should have a signature of `func ExampleXxx()`
