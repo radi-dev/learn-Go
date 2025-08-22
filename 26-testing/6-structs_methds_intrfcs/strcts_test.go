@@ -3,7 +3,7 @@ package structsmethdsintrfcs
 import (
 	"fmt"
 	"testing"
-	"testing_2_test/utils"
+	"testing_test/utils"
 )
 
 func TestStructs(t *testing.T) {
