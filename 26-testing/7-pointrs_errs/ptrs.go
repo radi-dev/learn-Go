@@ -2,10 +2,12 @@ package pointrserrs
 
 import "fmt"
 
+type Count int
+
 type Entity struct {
 	Name       string
 	Function   string
-	GreetCount int
+	GreetCount Count
 }
 
 func (ent Entity) Greet() (out string) {
@@ -18,4 +20,16 @@ func (ent *Entity) GreetMut() (out string) {
 	out = fmt.Sprintf("Hi, I am %s, an Entity that %s", ent.Name, ent.Function)
 	ent.GreetCount++
 	return
+}
+
+func (ent *Entity) Vex() (out string) {
+	out = fmt.Sprintf("Hi, I am %s, an Entity that %s", ent.Name, ent.Function)
+	ent.GreetCount--
+	return
+}
+
+// ============== Extras
+
+func (c Count) Stringify() string {
+	return fmt.Sprint(c)
 }
